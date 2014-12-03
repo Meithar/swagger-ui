@@ -765,7 +765,7 @@ function program14(depth0,data) {
   if (stack1 = helpers.value) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = depth0.value; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
   buffer += escapeExpression(stack1)
-    + " (default)</option>\n      ";
+    + "</option>\n      ";
   return buffer;
   }
 
