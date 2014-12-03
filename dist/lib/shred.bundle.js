@@ -859,8 +859,8 @@ Object.defineProperties(Request.prototype, {
   url: {
     get: function() {
       if (!this.scheme) { return null; }
-      return sprintf("%s://%s:%s%s",
-          this.scheme, this.host, this.port,
+      return sprintf("%s://%s%s",
+          this.scheme, this.host,
           (this.proxy ? "/" : this.path) +
           (this.query ? ("?" + this.query) : ""));
     },
